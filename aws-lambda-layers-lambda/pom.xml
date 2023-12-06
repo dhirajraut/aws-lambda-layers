@@ -17,20 +17,8 @@
   <properties>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
-    <!-- <aws.java.sdk.version>2.20.69</aws.java.sdk.version>
-    <aws-lambda-java-core.version>1.2.2</aws-lambda-java-core.version> -->
   </properties>
-  <!-- <dependencyManagement>
-    <dependencies>
-      <dependency>
-        <groupId>software.amazon.awssdk</groupId>
-        <artifactId>bom</artifactId>
-        <version>${aws.java.sdk.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-    </dependencies>
-  </dependencyManagement> -->
+
   <dependencies>
     <dependency>
       <groupId>com.github.dhirajraut</groupId>
