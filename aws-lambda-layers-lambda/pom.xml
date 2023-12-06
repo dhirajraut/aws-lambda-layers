@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- The Basics -->
+  <groupId>com.github.dhirajraut</groupId>
+  <artifactId>aws-lambda-layers-lambda</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <!-- More Project Information -->
+  <name>aws-lambda-layers-lambda</name>
+  <description>The project demonstrates how to create the AWS Lambda layers using Java</description>
+
+  <!-- Dependencies -->
+  <properties>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+    <!-- <aws.java.sdk.version>2.20.69</aws.java.sdk.version>
+    <aws-lambda-java-core.version>1.2.2</aws-lambda-java-core.version> -->
+  </properties>
+  <!-- <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>software.amazon.awssdk</groupId>
+        <artifactId>bom</artifactId>
+        <version>${aws.java.sdk.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement> -->
+  <dependencies>
+    <dependency>
+      <groupId>com.github.dhirajraut</groupId>
+      <artifactId>aws-lambda-layers-java-base-layer</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+</project>
